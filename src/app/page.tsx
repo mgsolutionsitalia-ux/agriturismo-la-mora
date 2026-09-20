@@ -6,6 +6,7 @@ import { ImmersiveStory } from "@/components/immersive-story";
 import { ApartmentsCarousel } from "@/components/apartments-carousel";
 import { StructureHighlights } from "@/components/structure-highlights";
 import { OutdoorLife } from "@/components/outdoor-life";
+import { SustainabilitySection } from "@/components/sustainability-section";
 import { TerritorySection } from "@/components/territory-section";
 import { ReviewsSection } from "@/components/reviews-section";
 import { DirectBooking } from "@/components/direct-booking";
@@ -55,6 +56,7 @@ export default function Home() {
         <InstagramGallery />
         <BlogSection />
         <OutdoorLife />
+        <SustainabilitySection />
         <TerritorySection />
         <ReviewsSection />
         <DirectBooking />

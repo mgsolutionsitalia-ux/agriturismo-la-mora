@@ -42,6 +42,20 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           Vai al contenuto principale
         </a>
         {children}
+        {/* Widget camere di bed-and-breakfast.it: apre una modale di selezione
+            stanze/richiesta disponibilità quando si clicca un elemento con
+            classe "rrp-widget-open-modal" (vedi booking-bar.tsx e
+            apartments-carousel.tsx). Booking engine proprietario è fuori
+            scope in questa fase (PLAN.md): questo widget è la prenotazione
+            reale e funzionante nel frattempo, mascherata dietro la grafica
+            del sito. Tag <script> nativo (non next/script) voluto: lo script
+            del fornitore usa document.write() per iniettare markup/CSS, che
+            il browser blocca sugli script caricati in modo asincrono (come
+            fa next/script con qualunque strategy) — deve restare un classico
+            script sincrono, posizionato esattamente dove le istruzioni del
+            fornitore richiedono: subito prima della chiusura di </body>. */}
+        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+        <script src="https://www.bed-and-breakfast.it/scripts/widget/widget_frm_camere.cfm?idstruttura=60754&idregione=18&l=it" />
       </body>
     </html>
   );

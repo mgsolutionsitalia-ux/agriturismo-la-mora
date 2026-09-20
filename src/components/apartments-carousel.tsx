@@ -443,12 +443,17 @@ function CardFace({
             metà frase ("PRENOTA" / "ORA"). In colonna ogni frase ha sempre
             tutta la larghezza della card per sé, mai spezzata. */}
         <div className="mt-3 flex flex-col items-center gap-2.5">
-          <Link
-            href={`${apt.href}#prenota`}
-            className="whitespace-nowrap rounded-[2px] border border-raspberry px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.06em] text-raspberry transition-colors duration-200 hover:bg-raspberry hover:text-cream"
+          {/* Apre il widget camere di bed-and-breakfast.it (vedi layout.tsx):
+              le pagine di dettaglio per singolo appartamento sono fuori
+              scope in questa fase, quindi qui la prenotazione reale passa
+              dal widget invece che da un link a una pagina non ancora
+              costruita. */}
+          <button
+            type="button"
+            className="rrp-widget-open-modal whitespace-nowrap rounded-[2px] border border-raspberry px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.06em] text-raspberry transition-colors duration-200 hover:bg-raspberry hover:text-cream"
           >
             Prenota ora
-          </Link>
+          </button>
           <Link
             href={apt.href}
             className="group/link whitespace-nowrap text-[10px] font-semibold uppercase tracking-[0.06em] text-ink-soft underline decoration-ink-soft/40 underline-offset-4 transition-colors hover:text-raspberry"

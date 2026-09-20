@@ -440,7 +440,7 @@ export function BookingBar() {
 
         <button
           type="button"
-          className="h-full w-full whitespace-nowrap bg-raspberry px-3.5 font-sans text-[12px] font-semibold uppercase tracking-[0.05em] text-cream transition-colors hover:bg-[#8a3844]"
+          className="rrp-widget-open-modal h-full w-full whitespace-nowrap bg-raspberry px-3.5 font-sans text-[12px] font-semibold uppercase tracking-[0.05em] text-cream transition-colors hover:bg-[#8a3844]"
         >
           Prenota ora
         </button>
@@ -601,7 +601,7 @@ function MobileBookingSheet({
 
         <button
           type="button"
-          className="mt-5 w-full rounded-[3px] bg-raspberry py-4 font-sans text-[13px] font-semibold uppercase tracking-[0.05em] text-cream transition-colors hover:bg-[#8a3844]"
+          className="rrp-widget-open-modal mt-5 w-full rounded-[3px] bg-raspberry py-4 font-sans text-[13px] font-semibold uppercase tracking-[0.05em] text-cream transition-colors hover:bg-[#8a3844]"
         >
           Prenota ora
         </button>
